@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/styles.css" />
+    <title>XRead - poikNplop</title>
+  </head>
+  <body>
+    <p>Download: <a href="https://github.com/poikNplop/XRead/archive/master.zip">.ZIP</a></p>
+    <h1 id="title"><a href="https://github.com/poikNplop/XRead">XRead</a></h1>
+    <h3 id="desc">- a simple, light text editor written in <a href="https://python.org">Python</a></h3>
+    <div class="requ">
+      <h3>Requirements:</h3>
+      <p>Python 3</p>
+      <p>The TKinter module</p>
+    </div>
+    <div class="info">
+      <p>To run type (in your terminal) either <code>$ python XRead.py</code> or <code>$ python3 XRead.py</code>, depending on whether you have python 2 or not, or <code>$ chmod +x XRead.py</code> and then <code>$ ./XRead.py</code>. You can also run it from Idle.</p>
+      <p>XRead works like a standard plain-text editor. Don't try and open OpenOffice or Microsoft Word files. It won't work. No RTF, ODT, DOCX, etc.</p>
+      <h4>Web Editor</h4>
+      <p>The web editor can be used as two things: Another application (in the command just replace <code>XRead.py</code> with <code>XReadWeb.py</code>) or an addon to XRead.py allowing you to use xml/html importing and exporting with the special tree style of writing. It works like this (notice the tabs and double spaces).</p>
+      <code>&lt;a it='cheese'&gt;&lt;b&gt;text&lt;c/&gt;&lt;/b&gt;stuff&lt;d&gt;&lt;e&gt;hmm&lt;e/&gt;&lt;f/&gt;&lt;/d&gt;la&lt;/a&gt;</code>
+      <p>would be equal to</p>
+      <code>a '#' '#' '#' {'it':'cheese'}
+  b '#' text '#' stuff '#' {}
+    c '#'  '#'  '#' {}
+  d '#'  '#' la '#' {}
+    e '#'  '#'  '#' {}
+    f '#'  '#'  '#' {}
+</code>
+      <p>Basically the system is <code>tagname '#' text '#' tailtext '#' {'attrib':'utes'}</code> with tabbification at the front specifying the depth. An emptier one would be <code>tagname '#' '#' '#' {}</code> (if five was a space character then <code>tagname5'#'55'#'55'#'5{}</code></p>
+      <p>This is also described in Help/Style in Web Editor or Help/Web Editor Style in standard XRead.</p>
+    </div>
+  </body>
+</html>
