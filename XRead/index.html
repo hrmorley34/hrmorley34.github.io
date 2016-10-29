@@ -20,13 +20,12 @@
       <p>The web editor can be used as two things: Another application (in the command just replace <code>XRead.py</code> with <code>XReadWeb.py</code>) or an addon to XRead.py allowing you to use xml/html importing and exporting with the special tree style of writing. It works like this (notice the tabs and double spaces).</p>
       <code>&lt;a it='cheese'&gt;&lt;b&gt;text&lt;c/&gt;&lt;/b&gt;stuff&lt;d&gt;&lt;e&gt;hmm&lt;e/&gt;&lt;f/&gt;&lt;/d&gt;la&lt;/a&gt;</code>
       <p>would be equal to</p>
-      <code>a '#' '#' '#' {'it':'cheese'}
-  b '#' text '#' stuff '#' {}
-    c '#'  '#'  '#' {}
-  d '#'  '#' la '#' {}
-    e '#'  '#'  '#' {}
-    f '#'  '#'  '#' {}
-</code>
+      <code>a '#' '#' '#' {'it':'cheese'}</code>
+      <code>  b '#' text '#' stuff '#' {}</code>
+      <code>    c '#'  '#'  '#' {}</code>
+      <code>  d '#'  '#' la '#' {}</code>
+      <code>    e '#'  '#'  '#' {}</code>
+      <code>    f '#'  '#'  '#' {}</code>
       <p>Basically the system is <code>tagname '#' text '#' tailtext '#' {'attrib':'utes'}</code> with tabbification at the front specifying the depth. An emptier one would be <code>tagname '#' '#' '#' {}</code> (if five was a space character then <code>tagname5'#'55'#'55'#'5{}</code></p>
       <p>This is also described in Help/Style in Web Editor or Help/Web Editor Style in standard XRead.</p>
     </div>
