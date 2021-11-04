@@ -1,8 +1,63 @@
 body {
- background-color:#ffffff;
- color:#000000;
+    background-color: #0f0f0f;
+    color: #ffffff;
 }
 
-div.requ {
- color:#ff0000;
+a:link {
+    /* color: #7f7fff; */
+    color: #bfbfff;
+}
+a:visited {
+    /* color: #bf3fff; */
+    color: #df9fff;
+}
+a:hover {
+    /* color: #5f5fdf; */
+    color: #7f7fff;
+}
+a:visited:hover {
+    /* color: #9f1fdf; */
+    color: #bf3fdf;
+}
+a:active {
+    /* color: #3f3fbf; */
+    color: #5f5fbf;
+}
+a:visited:active {
+    /* color: #7f1f9f; */
+    color: #9f3fbf;
+}
+
+.requirements {
+    color: #ff3f3f;
+}
+
+code, .codeblock {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+code {
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+}
+
+.codeblock {
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.terminal {
+    color: #7fff7f;
+}
+.terminal .dollar {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.ws {
+    white-space: pre;
 }
